@@ -1,0 +1,501 @@
+ASSIGNMENTS
+
+1=Write a js program to find maximum between two numbers.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if .. else</h2>
+
+
+<p id="demo"></p>
+
+<script>
+ 
+let max;
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+
+if (num1 > num2) {
+  alert("num1 is larger")
+  max = "Number1 is larger";
+} else {
+	alert("num1 is larger")
+  max = "Number2 is larger";
+}
+
+document.getElementById("demo").innerHTML = max;
+</script>
+
+</body>
+</html>
+
+////////////////////////////////////////////////////////////////////////////////////////////
+ 2 = Write a js program to find maximum between three numbers
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if .. else</h2>
+
+
+<p id="demo"></p>
+
+<script>
+ 
+let max;
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+const num3 = parseInt(prompt('Enter the third number '));
+
+if (num1 > num2 && num1 >num3) {
+  alert("num1 is larger")
+  max = "Number1 is larger";
+} 
+else if (num2 > num1 && num2 >num3) {
+  alert("num2 is larger")
+  max = "Number2 is larger";
+} 
+else  {
+	alert("num3 is larger")
+  max = "Number3 is larger";
+}
+
+document.getElementById("demo").innerHTML = max;
+</script>
+
+</body>
+</html>
+
+//////////////////////////////////////////////////////////////////////////
+ 3 = Write a js program to check whether a number is negative, positive or zero.
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+ 
+let num;
+const num1 = parseInt(prompt('Enter the first number '));
+
+
+if (num1 > 0) {
+    alert("The number is positive");
+}
+
+else if (num1 == 0) {
+  alert("The number is zero");
+}
+
+else {
+     alert("The number is negative");
+}
+
+document.getElementById("demo").innerHTML = num1;
+</script>
+
+</body>
+</html>
+
+ ///////////////////////////////////////////////////////////
+ 4 = Write a js program to print day of week name using switch case.
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case  6:
+        day = "Saturday";
+        break;
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>
+
+/////////////////////////////////////////////////////////////////////
+ 5 = Write a js program print the total number of days in a month using a switch case.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+let num;
+const num= parseInt(prompt('Enter the month number '));
+
+var month="";
+switch(num){
+        case 1: month = "January";
+            break;
+        case 2: month = "February";
+            break;
+        case 3: month = "March";
+            break;
+        case 4: month = "April";
+            break;
+        case 5: month = "May";
+            break;
+        case 6: month = "June"; 
+            break;
+        case 7: month = "July";
+            break;
+        case 8: month = "August";
+            break;
+        case 9: month = "September";
+            break;
+        case 10: month = "October";
+            break;
+        case 11: month = "November";
+            break;
+        case 12: month = "December";
+            break;
+        }
+document.getElementById("demo").innerHTML = "This is " + month;
+</script>
+
+</body>
+</html>
+/////////////////////////////////////////////////////////////
+ 6 = Write a js program to check whether an alphabet is a vowel or consonant using a switch case.
+ <!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var day;
+let character="consonent"
+const ch= prompt('Enter the character ');
+
+switch (ch) {
+    case "a":
+       
+    case "e":
+      
+    case "i":
+       
+    case "o":
+       
+    case "u":
+       character = "Vovel";
+        break;
+   
+}
+
+document.getElementById("demo").innerHTML = "Today is " +character;
+</script>
+
+</body>
+</html>
+ 
+ 
+ 
+   
+/////////////////////////////////////////////////
+
+ 7 = Write a js program to find the maximum between two numbers using a switch case.
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+ 
+let max;
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+
+  switch(num1 > num2)
+    {   
+        case 0: 
+            alert("num2 is larger")
+  			max = "Number2is larger";
+            break;
+        case 1: 
+           alert("num1 is larger")
+  			max = "Number1is larger";
+            break;
+    }
+
+
+document.getElementById("demo").innerHTML = max;
+</script>
+
+</body>
+</html>
+
+//////////////////////////////////////////////////////////////////
+ 8 = Write a js program to check whether a number is even or odd using a switch case.
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+ 
+let number;
+
+const num1 = parseInt(prompt('Enter the first number '));
+
+switch (num1 % 2){
+    case 0:
+         alert("num is even")
+        
+    case 1:
+		 alert("num is odd")
+       
+    default:
+        console.log("Invalid input")
+}
+
+document.getElementById("demo").innerHTML = number
+</script>
+
+</body>
+</html>
+///////////////////////////////////////////////////////
+
+ 9 = Write a js program to compare two strings.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+ 
+let number;
+const string1 = prompt('Enter the first string1 ');
+const string2 = prompt('Enter the 2nd string2');
+
+
+if (string1 === string2) {
+  alert("Matching strings!");
+}
+else {
+  alert("Strings do not match");
+}
+
+document.getElementById("demo").innerHTML ="string 1: "+string1 + "      string2: " + string2;
+</script>
+
+</body>
+</html>
+////////////////////////////////////////////////////////////////////////////////////////
+ 10=Write a js program to find the highest frequency character in a string.
+ 
+ 
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+
+var string="azasdasxfdsazsa";
+const Charobject={};
+
+var maxchar="";
+for(let ch of string)
+{
+	if(Charobject[ch])	
+    {
+		Charobject[ch]++;
+	}
+    else
+    {
+    	Charobject[ch]=1;
+    }
+}
+
+let arr = Object.values(Charobject);
+let min = Math.min(...arr);
+var max = Math.max(...arr);
+
+console.log( "gggggggggg",max);
+
+const key=Object.keys(Charobject).filter(k=>{
+	if(Charobject[k]===max)
+    return k;
+    //console.log("max character",k)
+});
+
+
+
+document.getElementById("demo").innerHTML =key
+</script>
+
+</body>
+</html>
+ ////////////////////////////////////////////////////////////////
+ 	11=  Write a js program to find the lowest frequency character in a string.
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+
+var string="azasdasxfdsazsa";
+const Charobject={};
+
+var maxchar="";
+for(let ch of string)
+{
+	if(Charobject[ch])	
+    {
+		Charobject[ch]++;
+	}
+    else
+    {
+    	Charobject[ch]=1;
+    }
+}
+
+let arr = Object.values(Charobject);
+let min = Math.min(...arr);
+var max = Math.max(...arr);
+
+console.log( "gggggggggg",max);
+
+const key=Object.keys(Charobject).filter(k=>{
+	if(Charobject[k]===min)
+    return k;
+    //console.log("max character",k)
+});
+
+
+
+document.getElementById("demo").innerHTML ="Minumum occuring in strings are : "+key
+</script>
+
+</body>
+</html>
+ 
+ 
+/////////////////////////////////////////////////////////////////////
+ 12 = Write a js program to input any character and check whether it is the alphabet, digit, or special character.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+ 
+let ch;
+const ch=prompt('Enter the first ch');
+
+
+ if((ch >= 97 && ch <= 122) || (ch >= 65 && ch <= 90))
+    {
+         alert(" is alphabet");
+    }
+ else if(ch >= 48 && ch <= 57)
+    {
+        alert(" is digit");
+    }
+ else 
+    {
+        alert(" is special character");
+    }
+
+
+
+
+document.getElementById("demo").innerHTML = ch
+</script>
+
+</body>
+</html>
+
+////////////////////////////////////////////////////////
+  13 = Write a js program to convert uppercase string to lowercase.
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+let text = "some text";
+let result = text.toUpperCase();
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
+
+////////////////////////////////////////////////////////////
+  15 = What values do the following expressions evaluate to, console the results?
+
+false || (true && false);     output=  false
+true || (1 + 2);               true 
+(1 + 2) || true;		3
+true && (1 + 2);		3
+false && (1 + 2);		false
+(1 + 2) && true;		true
+(32 * 4) >= 129;            false
+false !== !true;            false 
+true === 4; 			false                
+false === (847 === '847');      true  
+false === (847 == '847');	false
+(!true || (!(100 / 5) === 20) || ((328 / 4) === 82)) || false;      true
+
+
+
+
+
+
+
+
+
+
+
+
